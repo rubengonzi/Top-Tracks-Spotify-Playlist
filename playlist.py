@@ -10,7 +10,7 @@ load_dotenv()
 USERNAME = os.getenv("SPOTIPY_CLIENT_USERNAME")
 PLAYLIST_NAME = os.getenv("PLAYLIST_NAME")
 PLAYLIST_LENGTH = os.getenv("PLAYLIST_LENGTH")
-TIME_RANGE = os.getenv("TIME_RANGE")
+TIME_RANGE = os.getenv("PLAYLIST_TIME_RANGE")
 
 SCOPE = "playlist-read-private playlist-modify-public user-top-read"
 
@@ -26,3 +26,4 @@ def get_playlist():
 top_tracks = sp.current_user_top_tracks(time_range=TIME_RANGE, limit=PLAYLIST_LENGTH)
 track_uris = [track['uri'] for track in top_tracks['items']]
 sp.playlist_replace_items(get_playlist()['id'], track_uris)
+print(get_playlist())
