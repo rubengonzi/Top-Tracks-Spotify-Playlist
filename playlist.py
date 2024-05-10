@@ -26,4 +26,3 @@ def get_playlist():
 top_tracks = sp.current_user_top_tracks(time_range=TIME_RANGE, limit=PLAYLIST_LENGTH)
 track_uris = [track['uri'] for track in top_tracks['items']]
 sp.playlist_replace_items(get_playlist()['id'], track_uris)
-print(get_playlist())
