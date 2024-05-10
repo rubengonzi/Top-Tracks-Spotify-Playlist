@@ -21,7 +21,7 @@ PLAYLIST_LENGTH=The desired length of the playlist.
 PLAYLIST_TIME_RANGE=The time range for selecting tracks (e.g., short_term, medium_term, long_term).
 ```
 
-To get your Client ID, Client Secret and set up your Redirect URI please follow the [tutorial](https://developer.spotify.com/documentation/web-api/tutorials/getting-started#create-an-app) by Spotify.
+To get your Client ID, Client Secret and set up your Redirect URI please follow the [tutorial](https://developer.spotify.com/documentation/web-api/tutorials/getting-started#create-an-app) by Spotify to create your own app.
 
 ## Usage
 
