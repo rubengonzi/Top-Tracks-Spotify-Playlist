@@ -21,7 +21,7 @@ def get_playlist():
     for playlist in sp.user_playlists(USERNAME)['items']:
         if playlist['name'] == PLAYLIST_NAME:
             return playlist
-    return sp.user_playlist_create(user=USERNAME, name=PLAYLIST_NAME)
+    return sp.user_playlist_create(user=USERNAME, name=PLAYLIST_NAME, description="https://github.com/rubengonzi/Top-Tracks-Spotify-Playlist")
 
 top_tracks = sp.current_user_top_tracks(time_range=TIME_RANGE, limit=PLAYLIST_LENGTH)
 track_uris = [track['uri'] for track in top_tracks['items']]
