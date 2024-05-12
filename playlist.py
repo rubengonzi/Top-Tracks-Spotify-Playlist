@@ -12,7 +12,7 @@ USERNAME = os.getenv("SPOTIFY_USERNAME")
 PLAYLIST_NAME = os.getenv("PLAYLIST_NAME")
 PLAYLIST_LENGTH = os.getenv("PLAYLIST_LENGTH")
 TIME_RANGE = os.getenv("PLAYLIST_TIME_RANGE")
-REDIRECT_URI= "https://example.com/callback"
+REDIRECT_URI= "http://localhost"
 REPOSITORY_URL = "https://github.com/rubengonzi/Top-Tracks-Spotify-Playlist"
 SCOPE = "playlist-read-private playlist-modify-public user-top-read"
 
