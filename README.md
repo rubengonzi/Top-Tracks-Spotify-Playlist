@@ -17,18 +17,17 @@ After creating a file named `.env` in this repository's directory, you must defi
 
 ```
 SPOTIFY_USERNAME=Your Spotify username.
-PLAYLIST_NAME=The name of the playlist where you want to add tracks.
+PLAYLIST_NAME=The name of the playlist where you want to add the tracks.
 PLAYLIST_LENGTH=The desired length of the playlist (Minimum: 1. Maximum: 50).
-PLAYLIST_TIME_RANGE=Over what time frame the affinities are computed. Valid values: long_term (calculated from ~1 year of data and including all new data as it becomes available), medium_term (approximately last 6 months), short_term (approximately last 4 weeks).
+PLAYLIST_TIME_RANGE=Time frame of your top tracks. Valid values: long_term (calculated from ~1 year of data), medium_term (approximately last 6 months), short_term (approximately last 4 weeks).
 ```
 
 ## Usage
 
 ### Manually
 
-Upon executing the [playlist.py](https://github.com/rubengonzi/Top-Tracks-Spotify-Playlist/blob/main/playlist.py) script, you will be asked to grant persmission to your Spotify account. After you have done so, a new tab will open in your browser. Copy the URL to your clipboard and paste it into the following prompt:
-![image](https://github.com/rubengonzi/Top-Tracks-Spotify-Playlist/assets/125918471/a488b7aa-bd53-404c-9cc7-b90080138e9a)
+After executing this script all you need to do, is grant the application access to your Spotify account and your playlist should be good to go.
 
 ### Automated
 
-To automatically execute this script using the Task Scheduler by Windows, I suggest following this [tutorial](https://www.youtube.com/watch?v=T9A8TelGsdo).
+To automatically update your playlist on a ficed schedule, you can use the Windows Task Scheduler. I suggest watching this [tutorial](https://www.youtube.com/watch?v=T9A8TelGsdo) to guide you through the setup.
