@@ -16,7 +16,8 @@ REDIRECT_URI= "https://example.com/callback"
 REPOSITORY_URL = "https://github.com/rubengonzi/Top-Tracks-Spotify-Playlist"
 SCOPE = "playlist-read-private playlist-modify-public user-top-read"
 
-sp = spotipy.Spotify(SpotifyPKCE(client_id=CLIENT_ID, redirect_uri=REDIRECT_URI, scope=SCOPE))
+pkce = SpotifyPKCE(client_id=CLIENT_ID, redirect_uri=REDIRECT_URI, scope=SCOPE)
+sp = spotipy.Spotify(auth_manager=pkce)
 
 def get_playlist():
     """Return playlist if present else create a new one."""
