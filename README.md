@@ -30,4 +30,4 @@ After executing this script all you need to do, is grant the application access 
 
 ### Automated
 
-To automatically update your playlist on a ficed schedule, you can use the Windows Task Scheduler. I suggest watching this [tutorial](https://www.youtube.com/watch?v=T9A8TelGsdo) to guide you through the setup.
+To automatically update your playlist on a fixed schedule, you can use the Windows Task Scheduler. I suggest watching this [tutorial](https://www.youtube.com/watch?v=T9A8TelGsdo) to guide you through the setup.
