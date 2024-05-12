@@ -3,20 +3,20 @@
 import os
 from dotenv import load_dotenv
 import spotipy
-from spotipy.oauth2 import SpotifyOAuth
+from spotipy.oauth2 import SpotifyPKCE
 
 load_dotenv()
 
-USERNAME = os.getenv("SPOTIPY_CLIENT_USERNAME")
+CLIENT_ID = "afc5d8f0fea749be848893595e742a81"
+USERNAME = os.getenv("SPOTIFY_USERNAME")
 PLAYLIST_NAME = os.getenv("PLAYLIST_NAME")
 PLAYLIST_LENGTH = os.getenv("PLAYLIST_LENGTH")
 TIME_RANGE = os.getenv("PLAYLIST_TIME_RANGE")
-
+REDIRECT_URI= "https://example.com/callback"
 REPOSITORY_URL = "https://github.com/rubengonzi/Top-Tracks-Spotify-Playlist"
-
 SCOPE = "playlist-read-private playlist-modify-public user-top-read"
 
-sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=SCOPE))
+sp = spotipy.Spotify(auth_manager=SpotifyPKCE(client_id=CLIENT_ID, redirect_uri=REDIRECT_URI))
 
 def get_playlist():
     """Return playlist if present else create a new one."""
