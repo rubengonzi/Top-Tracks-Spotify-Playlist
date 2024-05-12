@@ -18,8 +18,8 @@ After creating a file named `.env` in this repository's directory, you must defi
 ```
 SPOTIFY_USERNAME=Your Spotify username.
 PLAYLIST_NAME=The name of the playlist where you want to add tracks.
-PLAYLIST_LENGTH=The desired length of the playlist.
-PLAYLIST_TIME_RANGE=The time range for selecting tracks (short_term, medium_term, long_term).
+PLAYLIST_LENGTH=The desired length of the playlist (Minimum: 1. Maximum: 50).
+PLAYLIST_TIME_RANGE=Over what time frame the affinities are computed. Valid values: long_term (calculated from ~1 year of data and including all new data as it becomes available), medium_term (approximately last 6 months), short_term (approximately last 4 weeks).
 ```
 
 ## Usage
